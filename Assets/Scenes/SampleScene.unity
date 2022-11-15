@@ -148,7 +148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 477474472}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.04000002, y: -0.99799997, z: -0.010999978}
+  m_LocalPosition: {x: -0.04000002, y: -1.016, z: -0.010999978}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 690307499}
@@ -393,6 +393,7 @@ GameObject:
   - component: {fileID: 690307496}
   - component: {fileID: 690307495}
   - component: {fileID: 690307500}
+  - component: {fileID: 690307501}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -512,6 +513,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &690307501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690307494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e4e24e8faa3d914db091c214aa9a32b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundChecker: {fileID: 0}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  jumpForce: 300
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
