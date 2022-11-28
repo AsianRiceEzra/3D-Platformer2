@@ -691,6 +691,7 @@ GameObject:
   - component: {fileID: 183899729}
   - component: {fileID: 183899728}
   - component: {fileID: 183899734}
+  - component: {fileID: 183899735}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -810,7 +811,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 183899727}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -5.7, y: 167.5, z: 49.7}
+  m_LocalPosition: {x: 27.9, y: 171.5, z: -75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1762069928}
@@ -838,6 +839,19 @@ MonoBehaviour:
   TouchingWall: 0
   UpwardSpeed: 5
   Cam: {fileID: 1219080332}
+--- !u!114 &183899735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183899727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25729879e92858345b9fd65e7b536ad1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkpoint: {fileID: 0}
 --- !u!1 &203914603
 GameObject:
   m_ObjectHideFlags: 0

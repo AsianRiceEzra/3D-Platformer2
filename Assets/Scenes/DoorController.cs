@@ -16,7 +16,7 @@ public class DoorController : MonoBehaviour
             //if the bool is true open the door
 
         }
-        if (Door.transform.position.y > 30f)
+        if (Door.transform.position.y > 180f)
         {
             doorIsOpening = false;
             //if the y of the door is > than 7 we want to stop the door
