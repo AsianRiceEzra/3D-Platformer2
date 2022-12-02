@@ -45,17 +45,28 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 normalVector = Vector3.up;
     private Vector3 wallNormalVector;
 
+   
+
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
     }
 
+
+    Animator myAnim;
+
     void Start()
     {
+        myAnim = GetComponentInChildren<Animator>();
         playerScale = transform.localScale;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
+
+
+
+
+   
 
 
     private void FixedUpdate()
@@ -67,6 +78,7 @@ public class PlayerMovement : MonoBehaviour
     {
         MyInput();
         Look();
+       
     }
 
     /// <summary>
@@ -159,11 +171,12 @@ public class PlayerMovement : MonoBehaviour
         if (grounded && readyToJump)
         {
             readyToJump = false;
+            
 
             //Add jump forces
             rb.AddForce(Vector2.up * jumpForce * 1.5f);
             rb.AddForce(normalVector * jumpForce * 0.5f);
-
+            myAnim.SetTrigger("jumped");
             //If jumping while falling, reset y velocity.
             Vector3 vel = rb.velocity;
             if (rb.velocity.y < 0.5f)
